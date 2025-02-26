@@ -11,6 +11,7 @@ class Settings:
     DATABASE_NAME: str = os.getenv("DATABASE_NAME", "database")
     DATABASE_USER: str = os.getenv("DATABASE_USER", "user")
     DATABASE_PASSWORD: str = os.getenv("DATABASE_PASSWORD", "password")
+    RESTO_API_KEY: str = os.getenv("RESTO_API_KEY", "some_api_key")
 
     DATABASE_URL: str = (
         f"postgresql+asyncpg://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}"
