@@ -8,7 +8,7 @@ app.include_router(db_check.router)
 
 
 @app.get('/api_health', summary='Проверка работы API')
-def get_health_check():
+async def get_health_check():
     return {"status": "Api is working"}
 
 

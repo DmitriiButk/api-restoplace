@@ -13,7 +13,7 @@ class Settings:
     DATABASE_PASSWORD: str = os.getenv("DATABASE_PASSWORD", "password")
 
     DATABASE_URL: str = (
-        f"postgresql+psycopg2://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}"
+        f"postgresql+asyncpg://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}"
     )
 
 

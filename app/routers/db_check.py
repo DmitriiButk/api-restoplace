@@ -6,7 +6,7 @@ router = APIRouter()
 
 
 @router.get('/db_health', summary='Проверка подключения к базе данных')
-def db_health_check():
-    if check_db_connection():
+async def db_health_check():
+    if await check_db_connection():
         return {'status': 'ok', 'message': 'Подключение к базе данных успешно'}
     return {'status': 'error', 'message': 'Ошибка подключения к базе данных'}

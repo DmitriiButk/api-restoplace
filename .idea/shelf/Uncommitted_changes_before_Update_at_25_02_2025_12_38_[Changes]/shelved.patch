@@ -1,0 +1,1258 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-16LE
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1740460845475)
++++ b/.gitignore	(date 1740460845475)
+@@ -0,0 +1,151 @@
++__pycache__/
++*.py[cod]
++*$py.class
++
++# C extensions
++*.so
++
++# Distribution / packaging
++.Python
++build/
++develop-eggs/
++dist/
++downloads/
++eggs/
++.eggs/
++lib/
++lib64/
++parts/
++sdist/
++var/
++wheels/
++share/python-wheels/
++*.egg-info/
++.installed.cfg
++*.egg
++MANIFEST
++
++# PyInstaller
++#  Usually these files are written by a python script from a template
++#  before PyInstaller builds the exe, so as to inject date/other infos into it.
++*.manifest
++*.spec
++
++# Installer logs
++pip-log.txt
++pip-delete-this-directory.txt
++
++# Unit test / coverage reports
++htmlcov/
++.tox/
++.nox/
++.coverage
++.coverage.*
++.cache
++nosetests.xml
++coverage.xml
++*.cover
++*.py,cover
++.hypothesis/
++.pytest_cache/
++cover/
++
++# Translations
++*.mo
++*.pot
++
++# Django stuff:
++*.log
++local_settings.py
++db.sqlite3
++db.sqlite3-journal
++
++# Flask stuff:
++instance/
++.webassets-cache
++
++# Scrapy stuff:
++.scrapy
++
++# Sphinx documentation
++docs/_build/
++
++# PyBuilder
++.pybuilder/
++target/
++
++# Jupyter Notebook
++.ipynb_checkpoints
++
++# IPython
++profile_default/
++ipython_config.py
++
++# pyenv
++#   For a library or package, you might want to ignore these files since the code is
++#   intended to run in multiple environments; otherwise, check them in:
++# .python-version
++
++# pipenv
++#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
++#   However, in case of collaboration, if having platform-specific dependencies or dependencies
++#   having no cross-platform support, pipenv may install dependencies that don't work, or not
++#   install all needed dependencies.
++#Pipfile.lock
++
++# poetry
++#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
++#   This is especially recommended for binary packages to ensure reproducibility, and is more
++#   commonly ignored for libraries.
++#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
++#poetry.lock
++
++# PEP 582; used by e.g. github.com/David-OConnor/pyflow
++__pypackages__/
++
++# Celery stuff
++celerybeat-schedule
++celerybeat.pid
++
++# SageMath parsed files
++*.sage.py
++
++# Environments
++.env
++.venv
++env/
++venv/
++ENV/
++env.bak/
++venv.bak/
++
++# Spyder project settings
++.spyderproject
++.spyproject
++
++# Rope project settings
++.ropeproject
++
++# mkdocs documentation
++/site
++
++# mypy
++.mypy_cache/
++.dmypy.json
++dmypy.json
++
++# Pyre type checker
++.pyre/
++
++# pytype static type analyzer
++.pytype/
++
++# Cython debug symbols
++cython_debug/
++
++# PyCharm
++#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
++#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
++#  and can be added to the global gitignore or merged into this file.  For a more nuclear
++#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
++.idea/
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_25_02_2025_12_34_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_25_02_2025_12_34_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_25_02_2025_12_34_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1740468896754)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_25_02_2025_12_34_[Changes]/shelved.patch	(date 1740468896754)
+@@ -0,0 +1,37 @@
++Index: README.md
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>Запуск API:\r\n\r\nuvicorn app.main:app --reload\r\n\r\nПроверка работы API:\r\n\r\nhttp://127.0.0.1:8000/api_health\r\n\r\nПроверка работы базы данных:\r\n\r\nhttp://127.0.0.1:8000/db_health\r\n\r\nСоздание новой базы данных:\r\n\r\nhttp://127.0.0.1:8000/db_create\r\n\r\nЕсли база данных создана, то ответ будет о созданной бд.
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/README.md b/README.md
++--- a/README.md	(revision d8962ba52b0fd82cf731320143c1ccc67a6aa3d6)
+++++ b/README.md	(date 1740468634585)
++@@ -1,17 +1,19 @@
++ Запуск API:
++ 
+++```shell
++ uvicorn app.main:app --reload
+++```
++ 
++ Проверка работы API:
++-
+++```shell
++ http://127.0.0.1:8000/api_health
++-
+++```
++ Проверка работы базы данных:
++-
+++```shell
++ http://127.0.0.1:8000/db_health
++-
+++```
++ Создание новой базы данных:
++-
+++```shell
++ http://127.0.0.1:8000/db_create
++-
+++```
++ Если база данных создана, то ответ будет о созданной бд.
++\ No newline at end of file
+Index: .venv/Scripts/activate.ps1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/activate.ps1 b/.venv/Scripts/activate.ps1
+new file mode 100644
+--- /dev/null	(date 1740459955821)
++++ b/.venv/Scripts/activate.ps1	(date 1740459955821)
+@@ -0,0 +1,61 @@
++$script:THIS_PATH = $myinvocation.mycommand.path
++$script:BASE_DIR = Split-Path (Resolve-Path "$THIS_PATH/..") -Parent
++
++function global:deactivate([switch] $NonDestructive) {
++    if (Test-Path variable:_OLD_VIRTUAL_PATH) {
++        $env:PATH = $variable:_OLD_VIRTUAL_PATH
++        Remove-Variable "_OLD_VIRTUAL_PATH" -Scope global
++    }
++
++    if (Test-Path function:_old_virtual_prompt) {
++        $function:prompt = $function:_old_virtual_prompt
++        Remove-Item function:\_old_virtual_prompt
++    }
++
++    if ($env:VIRTUAL_ENV) {
++        Remove-Item env:VIRTUAL_ENV -ErrorAction SilentlyContinue
++    }
++
++    if ($env:VIRTUAL_ENV_PROMPT) {
++        Remove-Item env:VIRTUAL_ENV_PROMPT -ErrorAction SilentlyContinue
++    }
++
++    if (!$NonDestructive) {
++        # Self destruct!
++        Remove-Item function:deactivate
++        Remove-Item function:pydoc
++    }
++}
++
++function global:pydoc {
++    python -m pydoc $args
++}
++
++# unset irrelevant variables
++deactivate -nondestructive
++
++$VIRTUAL_ENV = $BASE_DIR
++$env:VIRTUAL_ENV = $VIRTUAL_ENV
++
++if ("" -ne "") {
++    $env:VIRTUAL_ENV_PROMPT = ""
++}
++else {
++    $env:VIRTUAL_ENV_PROMPT = $( Split-Path $env:VIRTUAL_ENV -Leaf )
++}
++
++New-Variable -Scope global -Name _OLD_VIRTUAL_PATH -Value $env:PATH
++
++$env:PATH = "$env:VIRTUAL_ENV/Scripts;" + $env:PATH
++if (!$env:VIRTUAL_ENV_DISABLE_PROMPT) {
++    function global:_old_virtual_prompt {
++        ""
++    }
++    $function:_old_virtual_prompt = $function:prompt
++
++    function global:prompt {
++        # Add the custom prefix to the existing prompt
++        $previous_prompt_value = & $function:_old_virtual_prompt
++        ("(" + $env:VIRTUAL_ENV_PROMPT + ") " + $previous_prompt_value)
++    }
++}
+Index: .venv/Scripts/pydoc.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/pydoc.bat b/.venv/Scripts/pydoc.bat
+new file mode 100644
+--- /dev/null	(date 1740459955817)
++++ b/.venv/Scripts/pydoc.bat	(date 1740459955817)
+@@ -0,0 +1,1 @@
++python.exe -m pydoc %*
+Index: .venv/Scripts/activate.nu
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/activate.nu b/.venv/Scripts/activate.nu
+new file mode 100644
+--- /dev/null	(date 1740459955820)
++++ b/.venv/Scripts/activate.nu	(date 1740459955820)
+@@ -0,0 +1,96 @@
++# virtualenv activation module
++# Activate with `overlay use activate.nu`
++# Deactivate with `deactivate`, as usual
++#
++# To customize the overlay name, you can call `overlay use activate.nu as foo`,
++# but then simply `deactivate` won't work because it is just an alias to hide
++# the "activate" overlay. You'd need to call `overlay hide foo` manually.
++
++export-env {
++    def is-string [x] {
++        ($x | describe) == 'string'
++    }
++
++    def has-env [...names] {
++        $names | each {|n|
++            $n in $env
++        } | all {|i| $i == true}
++    }
++
++    # Emulates a `test -z`, but btter as it handles e.g 'false'
++    def is-env-true [name: string] {
++      if (has-env $name) {
++        # Try to parse 'true', '0', '1', and fail if not convertible
++        let parsed = (do -i { $env | get $name | into bool })
++        if ($parsed | describe) == 'bool' {
++          $parsed
++        } else {
++          not ($env | get -i $name | is-empty)
++        }
++      } else {
++        false
++      }
++    }
++
++    let virtual_env = 'C:\Users\Dmitri\PycharmProjects\uwai-rest-backend-booking\.venv'
++    let bin = 'Scripts'
++
++    let is_windows = ($nu.os-info.family) == 'windows'
++    let path_name = (if (has-env 'Path') {
++            'Path'
++        } else {
++            'PATH'
++        }
++    )
++
++    let venv_path = ([$virtual_env $bin] | path join)
++    let new_path = ($env | get $path_name | prepend $venv_path)
++
++    # If there is no default prompt, then use the env name instead
++    let virtual_env_prompt = (if ('' | is-empty) {
++        ($virtual_env | path basename)
++    } else {
++        ''
++    })
++
++    let new_env = {
++        $path_name         : $new_path
++        VIRTUAL_ENV        : $virtual_env
++        VIRTUAL_ENV_PROMPT : $virtual_env_prompt
++    }
++
++    let new_env = (if (is-env-true 'VIRTUAL_ENV_DISABLE_PROMPT') {
++      $new_env
++    } else {
++      # Creating the new prompt for the session
++      let virtual_prefix = $'(char lparen)($virtual_env_prompt)(char rparen) '
++
++      # Back up the old prompt builder
++      let old_prompt_command = (if (has-env 'PROMPT_COMMAND') {
++              $env.PROMPT_COMMAND
++          } else {
++              ''
++        })
++
++      let new_prompt = (if (has-env 'PROMPT_COMMAND') {
++          if 'closure' in ($old_prompt_command | describe) {
++              {|| $'($virtual_prefix)(do $old_prompt_command)' }
++          } else {
++              {|| $'($virtual_prefix)($old_prompt_command)' }
++          }
++      } else {
++          {|| $'($virtual_prefix)' }
++      })
++
++      $new_env | merge {
++        PROMPT_COMMAND      : $new_prompt
++        VIRTUAL_PREFIX      : $virtual_prefix
++      }
++    })
++
++    # Environment variables that will be loaded as the virtual env
++    load-env $new_env
++}
++
++export alias pydoc = python -m pydoc
++export alias deactivate = overlay hide activate
+Index: .venv/Scripts/activate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/activate b/.venv/Scripts/activate
+new file mode 100644
+--- /dev/null	(date 1740459955813)
++++ b/.venv/Scripts/activate	(date 1740459955813)
+@@ -0,0 +1,87 @@
++# This file must be used with "source bin/activate" *from bash*
++# you cannot run it directly
++
++
++if [ "${BASH_SOURCE-}" = "$0" ]; then
++    echo "You must source this script: \$ source $0" >&2
++    exit 33
++fi
++
++deactivate () {
++    unset -f pydoc >/dev/null 2>&1 || true
++
++    # reset old environment variables
++    # ! [ -z ${VAR+_} ] returns true if VAR is declared at all
++    if ! [ -z "${_OLD_VIRTUAL_PATH:+_}" ] ; then
++        PATH="$_OLD_VIRTUAL_PATH"
++        export PATH
++        unset _OLD_VIRTUAL_PATH
++    fi
++    if ! [ -z "${_OLD_VIRTUAL_PYTHONHOME+_}" ] ; then
++        PYTHONHOME="$_OLD_VIRTUAL_PYTHONHOME"
++        export PYTHONHOME
++        unset _OLD_VIRTUAL_PYTHONHOME
++    fi
++
++    # The hash command must be called to get it to forget past
++    # commands. Without forgetting past commands the $PATH changes
++    # we made may not be respected
++    hash -r 2>/dev/null
++
++    if ! [ -z "${_OLD_VIRTUAL_PS1+_}" ] ; then
++        PS1="$_OLD_VIRTUAL_PS1"
++        export PS1
++        unset _OLD_VIRTUAL_PS1
++    fi
++
++    unset VIRTUAL_ENV
++    unset VIRTUAL_ENV_PROMPT
++    if [ ! "${1-}" = "nondestructive" ] ; then
++    # Self destruct!
++        unset -f deactivate
++    fi
++}
++
++# unset irrelevant variables
++deactivate nondestructive
++
++VIRTUAL_ENV='C:\Users\Dmitri\PycharmProjects\uwai-rest-backend-booking\.venv'
++if ([ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ]) && $(command -v cygpath &> /dev/null) ; then
++    VIRTUAL_ENV=$(cygpath -u "$VIRTUAL_ENV")
++fi
++export VIRTUAL_ENV
++
++_OLD_VIRTUAL_PATH="$PATH"
++PATH="$VIRTUAL_ENV/Scripts:$PATH"
++export PATH
++
++if [ "x" != x ] ; then
++    VIRTUAL_ENV_PROMPT=""
++else
++    VIRTUAL_ENV_PROMPT=$(basename "$VIRTUAL_ENV")
++fi
++export VIRTUAL_ENV_PROMPT
++
++# unset PYTHONHOME if set
++if ! [ -z "${PYTHONHOME+_}" ] ; then
++    _OLD_VIRTUAL_PYTHONHOME="$PYTHONHOME"
++    unset PYTHONHOME
++fi
++
++if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT-}" ] ; then
++    _OLD_VIRTUAL_PS1="${PS1-}"
++    PS1="(${VIRTUAL_ENV_PROMPT}) ${PS1-}"
++    export PS1
++fi
++
++# Make sure to unalias pydoc if it's already there
++alias pydoc 2>/dev/null >/dev/null && unalias pydoc || true
++
++pydoc () {
++    python -m pydoc "$@"
++}
++
++# The hash command must be called to get it to forget past
++# commands. Without forgetting past commands the $PATH changes
++# we made may not be respected
++hash -r 2>/dev/null
+Index: .venv/Scripts/activate.fish
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/activate.fish b/.venv/Scripts/activate.fish
+new file mode 100644
+--- /dev/null	(date 1740459955819)
++++ b/.venv/Scripts/activate.fish	(date 1740459955819)
+@@ -0,0 +1,103 @@
++# This file must be used using `source bin/activate.fish` *within a running fish ( http://fishshell.com ) session*.
++# Do not run it directly.
++
++function _bashify_path -d "Converts a fish path to something bash can recognize"
++    set fishy_path $argv
++    set bashy_path $fishy_path[1]
++    for path_part in $fishy_path[2..-1]
++        set bashy_path "$bashy_path:$path_part"
++    end
++    echo $bashy_path
++end
++
++function _fishify_path -d "Converts a bash path to something fish can recognize"
++    echo $argv | tr ':' '\n'
++end
++
++function deactivate -d 'Exit virtualenv mode and return to the normal environment.'
++    # reset old environment variables
++    if test -n "$_OLD_VIRTUAL_PATH"
++        # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
++        if test (echo $FISH_VERSION | head -c 1) -lt 3
++            set -gx PATH (_fishify_path "$_OLD_VIRTUAL_PATH")
++        else
++            set -gx PATH $_OLD_VIRTUAL_PATH
++        end
++        set -e _OLD_VIRTUAL_PATH
++    end
++
++    if test -n "$_OLD_VIRTUAL_PYTHONHOME"
++        set -gx PYTHONHOME "$_OLD_VIRTUAL_PYTHONHOME"
++        set -e _OLD_VIRTUAL_PYTHONHOME
++    end
++
++    if test -n "$_OLD_FISH_PROMPT_OVERRIDE"
++       and functions -q _old_fish_prompt
++        # Set an empty local `$fish_function_path` to allow the removal of `fish_prompt` using `functions -e`.
++        set -l fish_function_path
++
++        # Erase virtualenv's `fish_prompt` and restore the original.
++        functions -e fish_prompt
++        functions -c _old_fish_prompt fish_prompt
++        functions -e _old_fish_prompt
++        set -e _OLD_FISH_PROMPT_OVERRIDE
++    end
++
++    set -e VIRTUAL_ENV
++    set -e VIRTUAL_ENV_PROMPT
++
++    if test "$argv[1]" != 'nondestructive'
++        # Self-destruct!
++        functions -e pydoc
++        functions -e deactivate
++        functions -e _bashify_path
++        functions -e _fishify_path
++    end
++end
++
++# Unset irrelevant variables.
++deactivate nondestructive
++
++set -gx VIRTUAL_ENV 'C:\Users\Dmitri\PycharmProjects\uwai-rest-backend-booking\.venv'
++
++# https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
++if test (echo $FISH_VERSION | head -c 1) -lt 3
++   set -gx _OLD_VIRTUAL_PATH (_bashify_path $PATH)
++else
++    set -gx _OLD_VIRTUAL_PATH $PATH
++end
++set -gx PATH "$VIRTUAL_ENV"'/Scripts' $PATH
++
++# Prompt override provided?
++# If not, just use the environment name.
++if test -n ''
++    set -gx VIRTUAL_ENV_PROMPT ''
++else
++    set -gx VIRTUAL_ENV_PROMPT (basename "$VIRTUAL_ENV")
++end
++
++# Unset `$PYTHONHOME` if set.
++if set -q PYTHONHOME
++    set -gx _OLD_VIRTUAL_PYTHONHOME $PYTHONHOME
++    set -e PYTHONHOME
++end
++
++function pydoc
++    python -m pydoc $argv
++end
++
++if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
++    # Copy the current `fish_prompt` function as `_old_fish_prompt`.
++    functions -c fish_prompt _old_fish_prompt
++
++    function fish_prompt
++        # Run the user's prompt first; it might depend on (pipe)status.
++        set -l prompt (_old_fish_prompt)
++
++        printf '(%s) ' $VIRTUAL_ENV_PROMPT
++
++        string join -- \n $prompt # handle multi-line prompts
++    end
++
++    set -gx _OLD_FISH_PROMPT_OVERRIDE "$VIRTUAL_ENV"
++end
+Index: .venv/Scripts/activate.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/activate.bat b/.venv/Scripts/activate.bat
+new file mode 100644
+--- /dev/null	(date 1740459955815)
++++ b/.venv/Scripts/activate.bat	(date 1740459955815)
+@@ -0,0 +1,38 @@
++@set "VIRTUAL_ENV=C:\Users\Dmitri\PycharmProjects\uwai-rest-backend-booking\.venv"
++
++@set "VIRTUAL_ENV_PROMPT="
++@if NOT DEFINED VIRTUAL_ENV_PROMPT (
++    @for %%d in ("%VIRTUAL_ENV%") do @set "VIRTUAL_ENV_PROMPT=%%~nxd"
++)
++
++@if defined _OLD_VIRTUAL_PROMPT (
++    @set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
++) else (
++    @if not defined PROMPT (
++        @set "PROMPT=$P$G"
++    )
++    @if not defined VIRTUAL_ENV_DISABLE_PROMPT (
++        @set "_OLD_VIRTUAL_PROMPT=%PROMPT%"
++    )
++)
++@if not defined VIRTUAL_ENV_DISABLE_PROMPT (
++    @set "PROMPT=(%VIRTUAL_ENV_PROMPT%) %PROMPT%"
++)
++
++@REM Don't use () to avoid problems with them in %PATH%
++@if defined _OLD_VIRTUAL_PYTHONHOME @goto ENDIFVHOME
++    @set "_OLD_VIRTUAL_PYTHONHOME=%PYTHONHOME%"
++:ENDIFVHOME
++
++@set PYTHONHOME=
++
++@REM if defined _OLD_VIRTUAL_PATH (
++@if not defined _OLD_VIRTUAL_PATH @goto ENDIFVPATH1
++    @set "PATH=%_OLD_VIRTUAL_PATH%"
++:ENDIFVPATH1
++@REM ) else (
++@if defined _OLD_VIRTUAL_PATH @goto ENDIFVPATH2
++    @set "_OLD_VIRTUAL_PATH=%PATH%"
++:ENDIFVPATH2
++
++@set "PATH=%VIRTUAL_ENV%\Scripts;%PATH%"
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1740469099312)
++++ b/.idea/workspace.xml	(date 1740469099312)
+@@ -0,0 +1,143 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="9d37aae0-394e-4056-b257-b56573da494b" name="Changes" comment="new_project">
++      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_02_2025_12_34_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.bat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.fish" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.nu" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate.ps1" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/activate_this.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/deactivate.bat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/dotenv.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/fastapi.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/flake8.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip-3.12.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.12.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pycodestyle.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pydoc.bat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pyflakes.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/python.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/pythonw.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/ruff.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/Scripts/uvicorn.exe" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/include/site/python3.12/greenlet/greenlet.h" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.venv/pyvenv.cfg" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Python Script" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="ProjectColorInfo"><![CDATA[{
++  "associatedIndex": 8
++}]]></component>
++  <component name="ProjectId" id="2tWFWFKm01qsS4jbWQpUZPll1OP" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Python.db.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "develop",
++    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
++  }
++}]]></component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\Dmitri\PycharmProjects\uwai-rest-backend-booking" />
++      <recent name="C:\Users\Dmitri\PycharmProjects\uwai-rest-backend-booking\app\routers" />
++      <recent name="C:\Users\Dmitri\PycharmProjects\uwai-rest-backend-booking\app" />
++    </key>
++  </component>
++  <component name="RunManager">
++    <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="uwai-rest-backend-booking" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/backend" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/backend/db.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Python.db" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
++      </set>
++    </attachedChunks>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="9d37aae0-394e-4056-b257-b56573da494b" name="Changes" comment="" />
++      <created>1740459953567</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1740459953567</updated>
++    </task>
++    <task id="LOCAL-00001" summary="new_project">
++      <option name="closed" value="true" />
++      <created>1740468139977</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1740468139978</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
++    <servers />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="new_project" />
++    <option name="LAST_COMMIT_MESSAGE" value="new_project" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .venv/Scripts/activate_this.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/activate_this.py b/.venv/Scripts/activate_this.py
+new file mode 100644
+--- /dev/null	(date 1740459955823)
++++ b/.venv/Scripts/activate_this.py	(date 1740459955823)
+@@ -0,0 +1,36 @@
++"""
++Activate virtualenv for current interpreter:
++
++Use exec(open(this_file).read(), {'__file__': this_file}).
++
++This can be used when you must use an existing Python interpreter, not the virtualenv bin/python.
++"""  # noqa: D415
++from __future__ import annotations
++
++import os
++import site
++import sys
++
++try:
++    abs_file = os.path.abspath(__file__)
++except NameError as exc:
++    msg = "You must use exec(open(this_file).read(), {'__file__': this_file}))"
++    raise AssertionError(msg) from exc
++
++bin_dir = os.path.dirname(abs_file)
++base = bin_dir[: -len("Scripts") - 1]  # strip away the bin part from the __file__, plus the path separator
++
++# prepend bin to PATH (this file is inside the bin directory)
++os.environ["PATH"] = os.pathsep.join([bin_dir, *os.environ.get("PATH", "").split(os.pathsep)])
++os.environ["VIRTUAL_ENV"] = base  # virtual env is right above bin directory
++os.environ["VIRTUAL_ENV_PROMPT"] = "" or os.path.basename(base)  # noqa: SIM222
++
++# add the virtual environments libraries to the host python import mechanism
++prev_length = len(sys.path)
++for lib in "..\\Lib\\site-packages".split(os.pathsep):
++    path = os.path.realpath(os.path.join(bin_dir, lib))
++    site.addsitedir(path.decode("utf-8") if "" else path)
++sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]
++
++sys.real_prefix = sys.prefix
++sys.prefix = base
+Index: .venv/include/site/python3.12/greenlet/greenlet.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/include/site/python3.12/greenlet/greenlet.h b/.venv/include/site/python3.12/greenlet/greenlet.h
+new file mode 100644
+--- /dev/null	(date 1740461119204)
++++ b/.venv/include/site/python3.12/greenlet/greenlet.h	(date 1740461119204)
+@@ -0,0 +1,164 @@
++/* -*- indent-tabs-mode: nil; tab-width: 4; -*- */
++
++/* Greenlet object interface */
++
++#ifndef Py_GREENLETOBJECT_H
++#define Py_GREENLETOBJECT_H
++
++
++#include <Python.h>
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++/* This is deprecated and undocumented. It does not change. */
++#define GREENLET_VERSION "1.0.0"
++
++#ifndef GREENLET_MODULE
++#define implementation_ptr_t void*
++#endif
++
++typedef struct _greenlet {
++    PyObject_HEAD
++    PyObject* weakreflist;
++    PyObject* dict;
++    implementation_ptr_t pimpl;
++} PyGreenlet;
++
++#define PyGreenlet_Check(op) (op && PyObject_TypeCheck(op, &PyGreenlet_Type))
++
++
++/* C API functions */
++
++/* Total number of symbols that are exported */
++#define PyGreenlet_API_pointers 12
++
++#define PyGreenlet_Type_NUM 0
++#define PyExc_GreenletError_NUM 1
++#define PyExc_GreenletExit_NUM 2
++
++#define PyGreenlet_New_NUM 3
++#define PyGreenlet_GetCurrent_NUM 4
++#define PyGreenlet_Throw_NUM 5
++#define PyGreenlet_Switch_NUM 6
++#define PyGreenlet_SetParent_NUM 7
++
++#define PyGreenlet_MAIN_NUM 8
++#define PyGreenlet_STARTED_NUM 9
++#define PyGreenlet_ACTIVE_NUM 10
++#define PyGreenlet_GET_PARENT_NUM 11
++
++#ifndef GREENLET_MODULE
++/* This section is used by modules that uses the greenlet C API */
++static void** _PyGreenlet_API = NULL;
++
++#    define PyGreenlet_Type \
++        (*(PyTypeObject*)_PyGreenlet_API[PyGreenlet_Type_NUM])
++
++#    define PyExc_GreenletError \
++        ((PyObject*)_PyGreenlet_API[PyExc_GreenletError_NUM])
++
++#    define PyExc_GreenletExit \
++        ((PyObject*)_PyGreenlet_API[PyExc_GreenletExit_NUM])
++
++/*
++ * PyGreenlet_New(PyObject *args)
++ *
++ * greenlet.greenlet(run, parent=None)
++ */
++#    define PyGreenlet_New                                        \
++        (*(PyGreenlet * (*)(PyObject * run, PyGreenlet * parent)) \
++             _PyGreenlet_API[PyGreenlet_New_NUM])
++
++/*
++ * PyGreenlet_GetCurrent(void)
++ *
++ * greenlet.getcurrent()
++ */
++#    define PyGreenlet_GetCurrent \
++        (*(PyGreenlet * (*)(void)) _PyGreenlet_API[PyGreenlet_GetCurrent_NUM])
++
++/*
++ * PyGreenlet_Throw(
++ *         PyGreenlet *greenlet,
++ *         PyObject *typ,
++ *         PyObject *val,
++ *         PyObject *tb)
++ *
++ * g.throw(...)
++ */
++#    define PyGreenlet_Throw                 \
++        (*(PyObject * (*)(PyGreenlet * self, \
++                          PyObject * typ,    \
++                          PyObject * val,    \
++                          PyObject * tb))    \
++             _PyGreenlet_API[PyGreenlet_Throw_NUM])
++
++/*
++ * PyGreenlet_Switch(PyGreenlet *greenlet, PyObject *args)
++ *
++ * g.switch(*args, **kwargs)
++ */
++#    define PyGreenlet_Switch                                              \
++        (*(PyObject *                                                      \
++           (*)(PyGreenlet * greenlet, PyObject * args, PyObject * kwargs)) \
++             _PyGreenlet_API[PyGreenlet_Switch_NUM])
++
++/*
++ * PyGreenlet_SetParent(PyObject *greenlet, PyObject *new_parent)
++ *
++ * g.parent = new_parent
++ */
++#    define PyGreenlet_SetParent                                 \
++        (*(int (*)(PyGreenlet * greenlet, PyGreenlet * nparent)) \
++             _PyGreenlet_API[PyGreenlet_SetParent_NUM])
++
++/*
++ * PyGreenlet_GetParent(PyObject* greenlet)
++ *
++ * return greenlet.parent;
++ *
++ * This could return NULL even if there is no exception active.
++ * If it does not return NULL, you are responsible for decrementing the
++ * reference count.
++ */
++#     define PyGreenlet_GetParent                                    \
++    (*(PyGreenlet* (*)(PyGreenlet*))                                 \
++     _PyGreenlet_API[PyGreenlet_GET_PARENT_NUM])
++
++/*
++ * deprecated, undocumented alias.
++ */
++#     define PyGreenlet_GET_PARENT PyGreenlet_GetParent
++
++#     define PyGreenlet_MAIN                                         \
++    (*(int (*)(PyGreenlet*))                                         \
++     _PyGreenlet_API[PyGreenlet_MAIN_NUM])
++
++#     define PyGreenlet_STARTED                                      \
++    (*(int (*)(PyGreenlet*))                                         \
++     _PyGreenlet_API[PyGreenlet_STARTED_NUM])
++
++#     define PyGreenlet_ACTIVE                                       \
++    (*(int (*)(PyGreenlet*))                                         \
++     _PyGreenlet_API[PyGreenlet_ACTIVE_NUM])
++
++
++
++
++/* Macro that imports greenlet and initializes C API */
++/* NOTE: This has actually moved to ``greenlet._greenlet._C_API``, but we
++   keep the older definition to be sure older code that might have a copy of
++   the header still works. */
++#    define PyGreenlet_Import()                                               \
++        {                                                                     \
++            _PyGreenlet_API = (void**)PyCapsule_Import("greenlet._C_API", 0); \
++        }
++
++#endif /* GREENLET_MODULE */
++
++#ifdef __cplusplus
++}
++#endif
++#endif /* !Py_GREENLETOBJECT_H */
+Index: .venv/Scripts/deactivate.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/Scripts/deactivate.bat b/.venv/Scripts/deactivate.bat
+new file mode 100644
+--- /dev/null	(date 1740459955816)
++++ b/.venv/Scripts/deactivate.bat	(date 1740459955816)
+@@ -0,0 +1,18 @@
++@set VIRTUAL_ENV=
++@set VIRTUAL_ENV_PROMPT=
++
++@REM Don't use () to avoid problems with them in %PATH%
++@if not defined _OLD_VIRTUAL_PROMPT @goto ENDIFVPROMPT
++    @set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
++    @set _OLD_VIRTUAL_PROMPT=
++:ENDIFVPROMPT
++
++@if not defined _OLD_VIRTUAL_PYTHONHOME @goto ENDIFVHOME
++    @set "PYTHONHOME=%_OLD_VIRTUAL_PYTHONHOME%"
++    @set _OLD_VIRTUAL_PYTHONHOME=
++:ENDIFVHOME
++
++@if not defined _OLD_VIRTUAL_PATH @goto ENDIFVPATH
++    @set "PATH=%_OLD_VIRTUAL_PATH%"
++    @set _OLD_VIRTUAL_PATH=
++:ENDIFVPATH
+Index: .venv/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/.gitignore b/.venv/.gitignore
+new file mode 100644
+--- /dev/null	(date 1740460108278)
++++ b/.venv/.gitignore	(date 1740460108278)
+@@ -0,0 +1,152 @@
++# Byte-compiled / optimized / DLL files
++__pycache__/
++*.py[cod]
++*$py.class
++
++# C extensions
++*.so
++
++# Distribution / packaging
++.Python
++build/
++develop-eggs/
++dist/
++downloads/
++eggs/
++.eggs/
++lib/
++lib64/
++parts/
++sdist/
++var/
++wheels/
++share/python-wheels/
++*.egg-info/
++.installed.cfg
++*.egg
++MANIFEST
++
++# PyInstaller
++#  Usually these files are written by a python script from a template
++#  before PyInstaller builds the exe, so as to inject date/other infos into it.
++*.manifest
++*.spec
++
++# Installer logs
++pip-log.txt
++pip-delete-this-directory.txt
++
++# Unit test / coverage reports
++htmlcov/
++.tox/
++.nox/
++.coverage
++.coverage.*
++.cache
++nosetests.xml
++coverage.xml
++*.cover
++*.py,cover
++.hypothesis/
++.pytest_cache/
++cover/
++
++# Translations
++*.mo
++*.pot
++
++# Django stuff:
++*.log
++local_settings.py
++db.sqlite3
++db.sqlite3-journal
++
++# Flask stuff:
++instance/
++.webassets-cache
++
++# Scrapy stuff:
++.scrapy
++
++# Sphinx documentation
++docs/_build/
++
++# PyBuilder
++.pybuilder/
++target/
++
++# Jupyter Notebook
++.ipynb_checkpoints
++
++# IPython
++profile_default/
++ipython_config.py
++
++# pyenv
++#   For a library or package, you might want to ignore these files since the code is
++#   intended to run in multiple environments; otherwise, check them in:
++# .python-version
++
++# pipenv
++#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
++#   However, in case of collaboration, if having platform-specific dependencies or dependencies
++#   having no cross-platform support, pipenv may install dependencies that don't work, or not
++#   install all needed dependencies.
++#Pipfile.lock
++
++# poetry
++#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
++#   This is especially recommended for binary packages to ensure reproducibility, and is more
++#   commonly ignored for libraries.
++#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
++#poetry.lock
++
++# PEP 582; used by e.g. github.com/David-OConnor/pyflow
++__pypackages__/
++
++# Celery stuff
++celerybeat-schedule
++celerybeat.pid
++
++# SageMath parsed files
++*.sage.py
++
++# Environments
++.env
++.venv
++env/
++venv/
++ENV/
++env.bak/
++venv.bak/
++
++# Spyder project settings
++.spyderproject
++.spyproject
++
++# Rope project settings
++.ropeproject
++
++# mkdocs documentation
++/site
++
++# mypy
++.mypy_cache/
++.dmypy.json
++dmypy.json
++
++# Pyre type checker
++.pyre/
++
++# pytype static type analyzer
++.pytype/
++
++# Cython debug symbols
++cython_debug/
++
++# PyCharm
++#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
++#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
++#  and can be added to the global gitignore or merged into this file.  For a more nuclear
++#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
++.idea/
+\ No newline at end of file
+Index: .env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.env b/.env
+new file mode 100644
+--- /dev/null	(date 1740464358921)
++++ b/.env	(date 1740464358921)
+@@ -0,0 +1,9 @@
++DATABASE_HOST=localhost
++DATABASE_PORT=5432
++DATABASE_NAME=database_uwai_booking
++DATABASE_USER=postgres
++DATABASE_PASSWORD=postgres
++
++SECRET_KEY=secretkey
++ACCESS_TOKEN_EXPIRE_MINUTES=60
++ALGORITHM=HS256
+\ No newline at end of file
+Index: .venv/pyvenv.cfg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/pyvenv.cfg b/.venv/pyvenv.cfg
+new file mode 100644
+--- /dev/null	(date 1740459955823)
++++ b/.venv/pyvenv.cfg	(date 1740459955823)
+@@ -0,0 +1,8 @@
++home = C:\Python312
++implementation = CPython
++version_info = 3.12.5.final.0
++virtualenv = 20.24.5
++include-system-site-packages = false
++base-prefix = C:\Python312
++base-exec-prefix = C:\Python312
++base-executable = C:\Python312\python.exe
