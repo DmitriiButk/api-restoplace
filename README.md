@@ -25,6 +25,11 @@ uvicorn app.main:app --reload
 ```share
 http://127.0.0.1:8000/api_health
 ```
+Проверка работы API Restoplace:
+
+```shell
+http://127.0.0.1:8000/api_restaurant_health
+```
 
 Проверка работы базы данных:
 
