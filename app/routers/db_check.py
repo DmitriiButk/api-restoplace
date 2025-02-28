@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from app.backend.db import check_db_connection
 
 
-router = APIRouter()
+router = APIRouter(tags=['check_db_connection'])
 
 
 @router.get('/db_health', summary='Проверка подключения к базе данных')

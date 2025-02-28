@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d38dddd2-e63d-49e2-a3eb-9155332792ed" name="Changes" comment="update project">
-      <change afterPath="$PROJECT_DIR$/app/backend/restoplace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/restaurant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/restaurant_check.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new_aiohttp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new_httpx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_02_2025_12_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_02_2025_12_38__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routers/reserves.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/http_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uwai-rest-backend-booking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uwai-rest-backend-booking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/backend/db_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/backend/db_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/backend/restoplace.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/db_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/db_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/restaurant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/restaurant_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/restaurant_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,19 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.db_temp.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.new.executor": "Run",
-    "Python.new_aiohttp.executor": "Run",
-    "Python.new_httpx (1).executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/new_some_project",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.db_temp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new_aiohttp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new_httpx (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/new_some_project&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="db_temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="uwai-rest-backend-booking" />
@@ -215,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740479368859</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update project">
+      <option name="closed" value="true" />
+      <created>1740567536261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740567536261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
