@@ -1,6 +1,7 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from app.backend.db_config import settings
-import httpx
+
+from app.utils.http_client import make_request
 
 
 router = APIRouter(tags=['check_restoplace_api_connection'])
@@ -10,12 +11,6 @@ router = APIRouter(tags=['check_restoplace_api_connection'])
 async def check_health_api_restaurant():
     api_url = 'https://api.restoplace.cc/reserves'
     headers = {"X-API-Key": settings.RESTO_API_KEY}
-    async with httpx.AsyncClient() as client:
-        try:
-            response = await client.get(api_url, headers=headers)
-            response.raise_for_status()
-        except httpx.HTTPStatusError as e:
-            raise HTTPException(status_code=e.response.status_code, detail=f'API Restoplace error: {e.response.text}')
-        except httpx.RequestError:
-            raise HTTPException(status_code=500, detail='Ошибка подключения к API Restoplace')
-    return {'status': response.status_code, 'message': 'Restoplace API is working'}
+
+    if make_request('GET', api_url, headers=headers):
+        return {'message': 'Restoplace API is working'}

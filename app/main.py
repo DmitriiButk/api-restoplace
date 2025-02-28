@@ -11,6 +11,6 @@ app.include_router(restaurant_check.router)
 
 @app.get('/api_health', summary='Проверка работы API', tags=['check_api_status'])
 async def get_health_check():
-    return {'status': 'Api is working'}
+    return {'message': 'Api is working'}
 
 
