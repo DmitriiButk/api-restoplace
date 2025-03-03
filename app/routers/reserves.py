@@ -7,7 +7,7 @@ from app.schemas import ReserveCreate
 from app.utils.http_client import make_request
 
 
-router = APIRouter(prefix='/restaurant', tags=['reserve'])
+router = APIRouter(prefix='/restaurant', tags=['reserves'])
 
 
 @router.get('/reserves', summary='Получение списка резервов')
