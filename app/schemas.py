@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr, Field, StringConstraints
+from pydantic import BaseModel, EmailStr, Field, StringConstraints, ConfigDict, field_serializer
 from typing import List, Annotated, Optional
 from datetime import datetime
 
@@ -17,8 +17,12 @@ class ReserveCreate(BaseModel):
     waitlist: Annotated[bool, Field(default=False, description='Заявка попадет в Лист ожидания')]
     deposit: Annotated[bool, Field(default=True, description='Учитывать депозит при бронировании')]
 
-    class Config:
-        allow_population_by_field_name = True
-        json_encoders = {
-            datetime: lambda v: v.strftime('%Y-%m-%d %H:%M:%S')
-        }
+    model_config = ConfigDict(populate_by_name=True)
+
+    @field_serializer('from_time')
+    def serialize_from_time(self, value: datetime) -> str:
+        return value.strftime('%Y-%m-%d %H:%M:%S')
+
+    @field_serializer('to')
+    def serialize_to(self, value: datetime) -> str:
+        return value.strftime('%Y-%m-%d %H:%M:%S')
