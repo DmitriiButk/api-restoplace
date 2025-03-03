@@ -13,7 +13,7 @@ router = APIRouter(prefix='/restaurant', tags=['reserve'])
 @router.get('/reserves', summary='Получение списка резервов')
 async def get_reserves(
         updated_after_time: Optional[str] = Query(None,
-                                                  description='Резервы, созданные/измененные после указанного времени в формате unix'),
+                        description='Резервы, созданные/измененные после указанного времени в формате unix'),
         query: Optional[str] = Query(None, description='Поисковый запрос по полям резервов'),
         page: Optional[int] = Query(1, ge=1, description='Страница выводимых объектов (по умолчанию: 1)')
 ):
@@ -62,7 +62,7 @@ async def update_reserve_status(
 
 @router.get('/times', summary='Получение доступных слотов времени')
 async def get_time_slots(
-        date: str = Query(..., regex='^\d{4}-\d{2}-\d{2}$',
+        date: str = Query(..., pattern=r'^\d{4}-\d{2}-\d{2}$',
                           description='Дата бронирования в формате YYYY-MM-DD'),
         length: int = Query(120,
                             description='Продолжительность слота в минутах'),
