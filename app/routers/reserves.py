@@ -29,8 +29,7 @@ async def get_reserves(
     return await make_request('GET', api_url, headers=headers, params=params)
 
 
-@router.get('/reserves/{reserve_id}',
-            summary='Получение данных резерва по ID')
+@router.get('/reserves/{reserve_id}', summary='Получение данных резерва по ID')
 async def get_reserve_by_id(reserve_id: str):
     api_url = f'https://api.restoplace.cc/reserves/{reserve_id}'
     headers = {'X-API-Key': settings.RESTO_API_KEY}
@@ -38,8 +37,7 @@ async def get_reserve_by_id(reserve_id: str):
     return await make_request('GET', api_url, headers=headers)
 
 
-@router.post('/reserves',
-             summary='Создание резерва')
+@router.post('/reserves', summary='Создание резерва')
 async def create_reserve(reserve: ReserveCreate):
     api_url = 'https://api.restoplace.cc/reserves/'
     headers = {'X-API-Key': settings.RESTO_API_KEY}
@@ -49,8 +47,7 @@ async def create_reserve(reserve: ReserveCreate):
     return await make_request('POST', api_url, headers=headers, json=payload)
 
 
-@router.put('/reserves/{reserve_id}/status',
-            summary='Обновление статуса резерва')
+@router.put('/reserves/{reserve_id}/status', summary='Обновление статуса резерва')
 async def update_reserve_status(
         reserve_id: int,
         status: int = Query(..., description='Новый статус резерва')
@@ -63,8 +60,7 @@ async def update_reserve_status(
     return await make_request('PUT', api_url, headers=headers, json=data)
 
 
-@router.get('/times',
-            summary='Получение доступных слотов времени')
+@router.get('/times', summary='Получение доступных слотов времени')
 async def get_time_slots(
         date: str = Query(..., regex='^\d{4}-\d{2}-\d{2}$',
                           description='Дата бронирования в формате YYYY-MM-DD'),
