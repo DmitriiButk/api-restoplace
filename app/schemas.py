@@ -8,14 +8,14 @@ class ReserveCreate(BaseModel):
     to: datetime = Field(..., description='Конец резерва')
     name: Annotated[str, StringConstraints(min_length=1)] = Field(..., description='Имя гостя')
     phone: Annotated[Optional[str], StringConstraints(pattern=r"^7\d{10}$")] = Field(
-        None, description="Телефон гостя в формате 79876543210")
-    email: Optional[EmailStr] = Field(None, description="Почта гостя")
-    count: Optional[int] = Field(None, description="Количество человек")
-    text: Optional[str] = Field(None, description="Комментарий к резерву")
-    source: Optional[str] = Field(None, description="Источник бронирования (домен)")
-    item_ids: Optional[List[int]] = Field(None, description="ID бронируемого стола или столов")
-    waitlist: Annotated[bool, Field(default=False, description="Заявка попадет в Лист ожидания")]
-    deposit: Annotated[bool, Field(default=True, description="Учитывать депозит при бронировании")]
+        None, description='Телефон гостя в формате 7987654321')
+    email: Optional[EmailStr] = Field(None, description='Почта гостя')
+    count: Optional[int] = Field(None, description='Количество человек')
+    text: Optional[str] = Field(None, description='Комментарий к резерву')
+    source: Optional[str] = Field(None, description='Источник бронирования (домен)')
+    item_ids: Optional[List[int]] = Field(None, description='ID бронируемого стола или столов')
+    waitlist: Annotated[bool, Field(default=False, description='Заявка попадет в Лист ожидания')]
+    deposit: Annotated[bool, Field(default=True, description='Учитывать депозит при бронировании')]
 
     class Config:
         allow_population_by_field_name = True
