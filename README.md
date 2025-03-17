@@ -1,4 +1,4 @@
-# uwai-rest-backend-booking
+# backend-booking
 
 Микросервис на FastAPI для интеграции с API Restoplace.
 
@@ -9,7 +9,7 @@
 Для клонирования репозитория используйте следующую команду:
 
 ```shell
-git clone https://github.com/DmitriiButk/uwai-rest-backend-booking.git
+git clone https://github.com/DmitriiButk/backend-booking.git
 ```
 
 ### Установка зависимостей
