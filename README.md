@@ -1,4 +1,4 @@
-# backend-booking
+# api-restoplace
 
 Микросервис на FastAPI для интеграции с API Restoplace.
 
@@ -9,7 +9,7 @@
 Для клонирования репозитория используйте следующую команду:
 
 ```shell
-git clone https://github.com/DmitriiButk/backend-booking.git
+git clone https://github.com/DmitriiButk/api-restoplace.git
 ```
 
 ### Установка зависимостей
